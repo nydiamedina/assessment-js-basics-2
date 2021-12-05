@@ -34,9 +34,11 @@ const cart = [
 ]
 
 //CODE HERE
+const summedPrice = cart.reduce((acc, curr) => {
+    return acc + curr.price;
+}, 0);
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
+console.log(summedPrice);
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -54,8 +56,11 @@ const cart = [
 */
 
 //CODE HERE
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    return cartTotal * (1 + tax) - couponValue;
+}
 
-
+console.log(calcFinalPrice(summedPrice, 10, 0.15));
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -79,7 +84,14 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
-
+    Properties:
+    - id (string) to identify the customer in our database
+    - firstName (string) to personalize the messages about their order,
+    - lastName (string) to have their full name,
+    - email (string) to send them email notifications about their order,
+    - phoneNumber (number) to contact them in case email doesn't work,
+    - address (string) to deliver the order to them,
+    - zipCode (number) to have their full address information
 */
 
 /*
@@ -88,3 +100,14 @@ const cart = [
 */
 
 //CODE HERE
+let customer = {
+    id: 'a1b2',
+    firstName: 'Nydia',
+    lastName: 'Medina',
+    email: 'nvmedina29@gmail.com',
+    phoneNumber: 87654321,
+    address: '123 Main Street, New York, NY',
+    zipCode: 13123,
+}
+
+console.log(customer);
