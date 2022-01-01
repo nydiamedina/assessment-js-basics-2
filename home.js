@@ -80,7 +80,7 @@ console.log(canWeDeliver(85205));
 const canWeDeliverTwo = zipCode => {
   let isZipCodeIncluded = false;
 
-  for (i = 0; i < deliveryAreaZipCodes.length; i++) {
+  for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
     if (deliveryAreaZipCodes[i] === zipCode) {
       isZipCodeIncluded = true;
       break;
