@@ -70,7 +70,7 @@ console.log(pizza.tags[1]);
 */
 
 //CODE HERE
-let {price} = pizza;
+let { price } = pizza;
 console.log(price);
 
 /*
@@ -81,7 +81,7 @@ console.log(price);
 */
 
 //CODE HERE
-let {category} = pizza;
+let { category } = pizza;
 console.log(category);
 
 //////////////////PROBLEM 3////////////////////
@@ -138,8 +138,7 @@ let foodArr = [
         rating: 4.9,
         tags: ['vegetarian', 'kids', 'specialty'],
     }
-] 
-
+];
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -154,7 +153,6 @@ let foodArr = [
 */
 
 //CODE HERE
-
 const filteredFood = foodArr.filter(food => food.tags.includes('specialty'));
 console.log(filteredFood);
 
